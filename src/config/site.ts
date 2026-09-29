@@ -3,7 +3,7 @@ export const siteConfig = {
   description:
     "Robôs humanoides, logística autônoma, limpeza, inspeção e automação industrial. Em breve.",
   locale: "pt_BR",
-  contactEmail: "contato@eurobotics.com.br",
+  contactEmail: "said.eurobotic@eurostec.com.br",
 } as const;
 
 /** Placeholder copy inferred from each image — edit freely. */
