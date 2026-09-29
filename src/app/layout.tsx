@@ -17,7 +17,7 @@ const barlow = Barlow_Semi_Condensed({
 export const metadata: Metadata = {
   metadataBase: getSiteUrl(),
   title: {
-    default: siteConfig.name,
+    default: `${siteConfig.name} | ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -26,17 +26,22 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: siteConfig.name,
-    title: siteConfig.name,
+    title: `${siteConfig.name} | ${siteConfig.tagline}`,
     description: siteConfig.description,
     locale: siteConfig.locale,
     url: "/",
-    images: [{ url: "/001.png", width: 1672, height: 941 }],
+    images: [
+      {
+        ...siteConfig.ogImage,
+        alt: `${siteConfig.name} — cachorros e limpeza, indústria e AMRs`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.name,
+    title: `${siteConfig.name} | ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: ["/001.png"],
+    images: [siteConfig.ogImage.url],
   },
   // Keep preview deployments out of search indexes.
   robots: isProduction

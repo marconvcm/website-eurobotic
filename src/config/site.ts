@@ -1,7 +1,9 @@
 export const siteConfig = {
   name: "Eurobotics",
+  tagline: "Robôs para limpeza, indústria e logística",
   description:
-    "Robôs humanoides, logística autônoma, limpeza, inspeção e automação industrial. Em breve.",
+    "Nossa linha de produtos: robôs quadrúpedes e limpeza autônoma, soldagem robotizada e células industriais, AMRs e empilhadeiras autônomas. Humanoides em breve.",
+  ogImage: { url: "/og-image.png", width: 1200, height: 630 },
   locale: "pt_BR",
   contactEmail: "pedro.eurobotic@eurostec.com.br",
 } as const;
