@@ -5,7 +5,7 @@ export const siteConfig = {
     "Nossa linha de produtos: robôs quadrúpedes e limpeza autônoma, soldagem robotizada e células industriais, AMRs e empilhadeiras autônomas. Humanoides em breve.",
   ogImage: { url: "/og-image.png", width: 1200, height: 630 },
   locale: "pt_BR",
-  contactEmail: "pedro.eurobotic@eurostec.com.br",
+  contactEmail: "vendas.eurobotic@eurostec.com.br",
 } as const;
 
 export type ShowcaseItem = {
