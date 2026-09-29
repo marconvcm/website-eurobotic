@@ -16,11 +16,11 @@ export type ShowcaseItem = {
   alt: string;
 };
 
-/** Linha de produtos atual — ordem: Cachorros e limpeza, Indústria, AMRs. */
+/** Linha de produtos atual — ordem: Quadrúpedes e limpeza, Indústria, AMRs. */
 export const products: readonly ShowcaseItem[] = [
   {
     image: "/003.png",
-    eyebrow: "Cachorros e limpeza",
+    eyebrow: "Quadrúpedes e limpeza",
     title: "Limpeza autônoma e robôs quadrúpedes",
     description:
       "Lavadoras e varredeiras autônomas para grandes áreas, e robôs quadrúpedes para inspeção, monitoramento e segurança em ambientes complexos.",

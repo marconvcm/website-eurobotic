@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     images: [
       {
         ...siteConfig.ogImage,
-        alt: `${siteConfig.name} — cachorros e limpeza, indústria e AMRs`,
+        alt: `${siteConfig.name} — quadrúpedes e limpeza, indústria e AMRs`,
       },
     ],
   },
