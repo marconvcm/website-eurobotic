@@ -6,6 +6,7 @@ export const siteConfig = {
   ogImage: { url: "/og-image.png", width: 1200, height: 630 },
   locale: "pt_BR",
   contactEmail: "vendas.eurobotic@eurostec.com.br",
+  gaMeasurementId: "G-DMKGDMRDB4",
 } as const;
 
 export type ShowcaseItem = {

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Barlow_Semi_Condensed } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -70,6 +71,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Analytics />
         <SpeedInsights />
       </body>
+      {/* Only the production deployment reports to GA, keeping previews and local dev out of the data. */}
+      {isProduction && <GoogleAnalytics gaId={siteConfig.gaMeasurementId} />}
     </html>
   );
 }
